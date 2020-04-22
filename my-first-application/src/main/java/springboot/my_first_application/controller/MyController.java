@@ -8,6 +8,6 @@ public class MyController {
 
 	@RequestMapping("/")
 	public String home() {
-		return "MY HOME";
+		return "MY HOME TEST WEB HOOK";
 	}
 }
