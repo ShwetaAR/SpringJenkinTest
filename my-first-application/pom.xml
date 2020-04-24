@@ -83,4 +83,18 @@
       </plugins>
     </pluginManagement>
   </build>
+  
+    <repositories>
+        <repository>
+            <id>myMavenRepo.read</id>
+            <url>https://github.com/ShwetaAR/SpringJenkinTest/tree/master/my-first-application/mavenRepo</url>
+        </repository>
+    </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>myMavenRepo.write</id>
+            <url>https://github.com/ShwetaAR/SpringJenkinTest/tree/master/my-first-application/mavenRepo</url>
+        </repository>
+    </distributionManagement>
 </project>
