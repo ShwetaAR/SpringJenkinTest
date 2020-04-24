@@ -17,4 +17,14 @@ public class AppTest
     {
         assertTrue( true );
     }
+    
+
+    /**
+     * Rigorous Test :-)
+     */
+    @Test
+    public void shouldfailTheTest()
+    {
+        assertTrue( false );
+    }
 }
