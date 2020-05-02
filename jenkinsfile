@@ -4,17 +4,16 @@ pipeline {
         stage ('Compile and Test Stage') {
 
             steps {
-                 {
+            
                     sh 'mvn clean install'
-                }
+                
             }
         }
         
         stage ('Deployment Stage') {
             steps {
-                {
-                    sh 'mvn deploy'
-                }
+                      sh 'mvn deploy'
+                
             }
         }
     }
