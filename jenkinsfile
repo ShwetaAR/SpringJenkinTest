@@ -4,10 +4,12 @@ pipeline {
             maven 'M3' 
        
     }
+    stages{
         stage ('Build') {
             steps {
                 echo 'This is a minimal pipeline.'
             }
         }
+    }
     }
 
