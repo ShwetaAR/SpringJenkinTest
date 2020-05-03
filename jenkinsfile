@@ -1,15 +1,22 @@
 pipeline {
     agent any
-    stages {
+    tools { 
+        maven 'Maven 3.3.9' 
        
-        stage('--test--') {
+    }
+    stages {
+        stage ('Initialize') {
             steps {
-                sh "mvn test"
+                sh '''
+                    echo "PATH = ${PATH}"
+                    echo "M2_HOME = ${M2_HOME}"
+                ''' 
             }
         }
-        stage('--package--') {
+
+        stage ('Build') {
             steps {
-                sh "mvn package"
+                echo 'This is a minimal pipeline.'
             }
         }
     }
