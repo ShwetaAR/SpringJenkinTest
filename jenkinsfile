@@ -4,15 +4,6 @@ pipeline {
             maven 'M3' 
        
     }
-    stages {
-        stage ('Initialize') {
-            steps {
-                bash '''
-                    echo "PATH = ${PATH}"
-                   
-                ''' 
-            }
-        }
 
         stage ('Build') {
             steps {
