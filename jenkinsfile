@@ -1,20 +1,9 @@
 pipeline {
-    agent { docker { image 'LOCAL MAVEN' } }
+   
        stages {
         stage ('Compile and Test Stage') {
 
-            steps {
-            
-                    sh 'mvn clean install'
-                
-            }
-        }
-        
-        stage ('Deployment Stage') {
-            steps {
-                      sh 'mvn deploy'
-                
-            }
+        sh """mvn clean build"""
         }
     }
 }
